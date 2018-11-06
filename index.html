@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Demo</title>
+  <style>
+    .courses{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .course-wrapper{
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 1em;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      -ms-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .course-wrapper img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .course-wrapper:hover{
+      box-shadow: inset 0 0 0 130px rgba(200,95,66, 0.4);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="courses">
+    <div class="course-wrapper" style="background-image: url('./Cgroup.jpg')">
+    </div>
+    <div class="course-wrapper" style="background-image: url('./Dgroup.jpg')">
+    </div>
+    <div class="course-wrapper" style="background-image: url('./Pgroup.jpg')">
+    </div>
+  </div>
+</body>
+</html>
